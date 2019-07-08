@@ -1,6 +1,5 @@
 package com.testwebapp.demo.controllers;
 
-import com.testwebapp.demo.services.RecipeService;
 import com.testwebapp.demo.services.RecipeServiceImpl;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
@@ -11,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class IndexController {
 
-    public RecipeServiceImpl recipeService;
+    private RecipeServiceImpl recipeService;
 
     public IndexController(RecipeServiceImpl recipeService) {
         this.recipeService = recipeService;

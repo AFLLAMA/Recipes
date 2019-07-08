@@ -11,7 +11,7 @@ import java.util.Set;
 @Service
 public class RecipeServiceImpl implements RecipeService {
 
-    RecipeRepository recipeRepository;
+    private RecipeRepository recipeRepository;
 
     public RecipeServiceImpl(RecipeRepository recipeRepository) {
         this.recipeRepository = recipeRepository;
